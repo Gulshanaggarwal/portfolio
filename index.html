@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing:border-box;
+    margin-right:0;
+
+    }
+    body{
+        font-family:'Handlee',cursive;
+        background:#f1f1f1;
+        
+        
+    }
+    #home{
+        height:15vw;
+        border:2px soild grey;
+        background:#03841E;
+        
+        
+    }
+    #home #search{
+        position:absolute;
+        font-size:7vw;
+        color:white;
+        top:3%;
+        left:80%;
+    }
+    
+#main{
+    width:11vw;
+    height:auto;
+  top:2.5%;
+   left:2%;
+   position:absolute;
+}
+#d1,#d2,#d3{
+    width:11vw;
+    height:2vw;
+    border-radius:0.5vw;
+    background:#fff;
+    margin-top:1vw;
+    transition:all 0.2s ease-in-out;
+}
+
+ #list{
+    background-color:#111;
+    display:none;
+    width:30vw;
+    height:100vw;
+    z-index:100;
+
+    
+}
+#list li{
+    text-align:center;
+    padding-top:60px;
+    
+    
+    
+}
+ #list li a{
+    color:#818181;
+    text-decoration:none;
+    display:inline-block;
+    transition-duration:0.7s;
+    font-size:4vw;
+    display:block;
+    height:7vw;
+    font-weight:bold;
+    
+}
+ #list li a:hover{
+    color:#f1f1f1;
+    
+    
+    
+    
+}
+#sec1{
+    background:#000000;
+    height:80vh;
+    position:relative;
+    z-index:-2;
+    overflow-x:hidden;
+}
+#sec1 img{
+    display:block;
+    width:28vw;
+    height:20vh;
+    position:relative;
+    border-radius:50%;
+    top:7%;
+    left:20%;
+    border:1vw solid black;
+    transform:rotate(-1deg);
+    z-index:2;
+    
+}
+#sec1 p{
+    background-color:blanchedalmond;
+    width:80vw;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:10%;
+    padding-left:2%;
+    padding-right:2%;
+    font-size:4.75vw;
+    
+}
+#sec2{
+    height:auto;
+    background-color:#222121;
+    
+}
+#sec2 h2{
+    display:inline-block;
+    color:blanchedalmond;
+    padding:2%;
+    font-size:8vw;
+    margin-left:30%;
+    border:1vw dashed blanchedalmond;
+    margin-top:5%;
+    
+}
+#sec2 label{
+    display:block;
+    margin-top:10%;
+    margin-left:5%;
+    color:gold;
+    font-size:110%;
+}
+#sec2 meter{
+    display:inline-block;
+    left:45%;
+    position:absolute;
+    width:33%;
+    height:3%;
+    
+}
+#sec3{
+    height:160vw;
+    background:black;
+    
+    
+}
+#sec3 h2{
+    color:blanchedalmond;
+    padding:2%;
+    font-size:8vw;
+    margin-left:25%;
+    border:1vw dashed blanchedalmond;
+    margin-top:5%;
+    display:inline-block;
+    
+}
+#sec3 img{
+    width:60vw;
+    height:40vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    border:1vw solid white;
+    padding:1%;
+    border-radius:3%;
+
+}
+
+#sec3 img:hover{
+    box-shadow: 1vw 1vw 2px 1px rgba(0, 140, 186, 0.5);
+}
+#sec3 div{
+    background-color:blue;
+    width:35vw;
+    height:12vw;
+    margin-left:20%;
+    border-radius:2vw;
+   margin-top:3%;
+    box-shadow:1.5vw 1.5vw 30px grey;
+
+
+   
+    
+}
+#sec3 div a{
+
+    color:white;
+    text-decoration:none;
+    padding-top:7%;
+    padding-left:4%;
+    display:block;
+    width:100%;
+    font-size:110%;
+    
+}
+footer{
+    background:#222121;
+    height:30vw;
+    overflow-x:hidden;
+}
+footer #icons{
+top:15%;
+position:relative;
+left:25%;
+    
+}
+footer #icons i{
+    font-size:8vw;
+    color:white;
+    margin-left:5%;
+}
+footer p{
+    top:45%;
+    left:12%;
+    color:#f2f2f2;
+    font-size:4.75vw;
+    position:relative;
+}
+#form{
+    width:80vw;
+    height:auto;
+    position:absolute;
+    z-index:100;
+    top:8%;
+    left:10%;
+    background-color:#f2f2f2;
+    border-radius:2vw;
+    border:1vw solid orange;
+    display:none;
+    transition:all 0.7s ease-in-out;
+    position:fixed;
+}
+
+#form a{
+    font-size:10vw;
+    margin-left:88%;
+    position:absolute;
+    bottom:86%;
+    color:black;
+    font-family:'Tenali Ramakrishna';
+    
+}
+#form h3{
+    color:black;
+    padding:2%;
+    font-size:5vw;
+    margin-left:30%;
+    border:1vw dashed black;
+    margin-top:1%;
+    display:inline-block;
+    
+}
+    
+
+#form div{
+    margin-top:20%;
+    margin-bottom:10%;
+}
+
+
+#form div input{
+    display:block;
+    margin-top:10%;
+    margin-left:5%;
+    width:80%;
+    height:10vw;
+    padding-left:2%;
+    border-radius:1vw;
+   
+    
+    
+}
+#form div textarea{
+    margin-top:5%;
+    display:block;
+    margin-left:5%;
+    padding-left:2%;
+    border-radius:1vw;
+}
+#form div button{
+    margin-left:auto;
+    margin-right:auto;
+    display:block ;
+    margin-top:5%;
+    width:30%;
+    font-size:4vw;
+    height:9vw;
+    background-color:orange;
+    color:white;
+    border-radius:1.4vw;
+    border-color:orange;
+    box-shadow:1.5vw 1.5vw 40px black;
+    font-weight:bold;
+}
+
+#form div input:hover,#form div textarea:hover{
+    border-color:orange;
+}
+
+
+        </style>
+    </head>
+    <body>
+        
+    <header id="home">
+    
+     <div id="main" onmouseover="display()" onmouseout="hide()">
+      <div id="d1"></div>
+      <div id="d2"></div>
+      <div id="d3"></div>      
+     </div>
+     <ul id="list">
+         <li><a onmouseover="stop()" onmouseout="lost()"href="#home">Home</a></li>
+         <li><a onmouseover="stop()" onmouseout="lost()" href="#about">About</a></li>
+         <li><a onmouseover="stop()" onmouseout="lost()"href="#project">project</a></li>
+         <li><a onmouseover="stop()" onmouseout="lost()"href="#contact">contact</a></li>
+         
+         
+     </ul>
+     <i class="fa fa-search" id="search"></i>
+  
+     
+     </header>
+     <section id="sec1">
+     <img src="https://api.sololearn.com/Uploads/Avatars/16956565.jpg" alt="gulshan photo"/>
+         
+    
+            <p> Hey, I,m a Gulshan this is my Portfolio, I'm Student in computer science pursuing bachelor's of technology from UD RTU KOTA.Programming has changed my life .I have learned new things in my life. I am much passionate towards web development & app development.</p>     
+     </section>
+     <section id="sec2">
+     <h2>My Skills</h2>
+     <label for="c">C programming
+<meter id="c" value="0.5">50%</meter></label>
+     <label for="html">Html
+<meter id="html" value="0.6">60%</meter></label>
+
+ <label for="css">Css
+<meter id="css" value="0.5">50%</meter></label>
+  <label for="js">Javascript
+<meter id="js" value="0.1">10%</meter></label>  
+         
+     </section>
+     <section id="sec3">
+     <h2>My projects</h2>
+<a href="https://i.ibb.co/mT97J6H/Screenshot-2020-06-05-19-37-45-1.png" target="_blank"><img src="https://i.ibb.co/mT97J6H/Screenshot-2020-06-05-19-37-45-1.png" alt="7-wonders"/></a>
+  <div><a href="https://gulshanaggarwal.github.io/7-wonders/">Go to project</a></div>
+    
+    <a href="https://i.ibb.co/NKwm2p0/Screenshot-2020-05-25-22-17-26-1.png" target="_blank"><img src="https://i.ibb.co/NKwm2p0/Screenshot-2020-05-25-22-17-26-1.png" alt="payment checkout"/></a>  
+    <div><a href="https://gulshanaggarwal.github.io/Payment-checkout./">Go to project</a></div>
+    
+     </section>
+     <footer>
+     <div id="icons">
+       <a href="https://m.facebook.com/gulshan.aggarwal.73" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+</a>
+           <a href="https://www.linkedin.com/in/gulshan-aggarwal-64b4121a3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+             <a href="https://github.com/Gulshanaggarwal"target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+ 
+              </div>
+              <p>&copy2020 all right reserved to <strong>Gulshan</strong></p>
+              
+     </footer>
+     <form id="form" action="action.html">
+     <a onmouseover="gayab()">&times;</a>
+     <h3>Contact </h3>
+     <div>
+         <input  type="text" placeholder="Name"/>
+         <input  type="email" placeholder="Email"/>
+         <textarea placeholder="message" rows="7" cols="20"></textarea>
+         <button type="submit">Submit</button>
+         </div>
+         
+     </form>
+ 
+   <script>
+     function display(){
+
+
+document.getElementById("d1").style.transform="translateY(17px)rotate(45deg)";
+document.getElementById("d3").style.transform="translate(-2px)rotate(-45deg)";
+document.getElementById("d2").style.transform="scale(0)";
+
+
+document.getElementById("list").style.display="block";
+document.getElementById("list").style.transition="width 1s";
+
+
+}
+function hide(){
+    document.getElementById("list").style.display="none";
+    document.getElementById("d1").style.transform="none";
+    document.getElementById("d2").style.transform="none"; document.getElementById("d3").style.transform="none";
+
+    
+}
+function stop(){
+    document.getElementById("list").style.display="block";
+    document.getElementById("d1").style.transform="translateY(17px)rotate(45deg)";
+document.getElementById("d3").style.transform="translate(-2px)rotate(-45deg)";
+document.getElementById("d2").style.transform="scale(0)";
+
+}
+function lost(){
+    document.getElementById("list").style.display="none";
+    document.getElementById("d1").style.transform="none";
+    document.getElementById("d2").style.transform="none"; document.getElementById("d3").style.transform="none";
+
+}
+function gayab(){
+    document.getElementById("form").style.display="none";
+}
+setTimeout(()=>{
+    document.getElementById("form").style.display="block";
+},1000)
+  
+   </script>
+        
+    
+        
+    </body>
+</html>
