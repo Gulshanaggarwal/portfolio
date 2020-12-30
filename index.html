@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Gulshan Aggarwal is a computer science aspirant currently pursuing bachelor's of technology from UD RTU kota.Currently i'm learning my favourite technologies."/>
+<title>gulshan aggarwal</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="phone.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <!--Home section---- -->
+  <header id="home">
+    <h1><span>Gulshan</span> <span>Aggarwal</span></h1>
+    <div class="nav-wrapper">
+      <ul class="nav-items">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <img src="images/menu.svg" alt="Menu" id="hamburger" onclick="showMenu()">
+    </div>
+  </header>
+
+  <!--About section---- -->
+
+  <section id="about">
+    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHbGmXtnQSJDA/profile-displayphoto-shrink_200_200/0/1605258239398?e=1614211200&v=beta&t=CoRgTfsuQKDs1kQ9Zua6tNcLDVwazKaeZJ3XyWbzh1Q" alt="gulshan aggarwal">
+    <p>Hey,I'm <strong>Gulshan</strong> this is my portfolio,I'm a Student in computer science pursuing bachelor's of technology from Rajasthan technical university kota.Programming has changed my life I've learned new things in my life,from the young age I'm much passionate towards technologies like web & this is the time I'm learning my favourite technologies.Currently I'm also a online tutor at Chegg India.</p>
+  </section>
+
+  <!--Skill section---- -->
+
+  <section id="skill">
+    <h2 class="utility-class">My Skills</h2>
+    <div class="pair-skills">
+      <div class="outer-box">
+        <div class="inner-box"><img src="images/html5.svg" alt="html5"></div>
+      </div>
+      <div class="outer-box">
+        <div class="inner-box"><img src="images/css-3.svg" alt="css-3"></div>
+      </div>
+    </div>
+    <div class="pair-skills">
+      <div class="outer-box">
+        <div class="inner-box"><img src="images/python.svg" alt="python"></div>
+      </div>
+      <div class="outer-box">
+        <div class="inner-box"><img src="images/c.svg" alt="c programming"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--project section---- -->
+
+  <section id="project">
+    <h2 class="utility-class">Projects</h2>
+    <div class="project-container">
+      <div class="project-wrapper">
+        <img src="images/Foodbazaar.png" alt="Foodbazaar">
+        <p>Food bazaar a single web page design</p>
+        <button type="button"><a href="">Give a look</a></button>
+      </div>
+      <div class="project-wrapper">
+       <img src="images/code.svg" alt="Battery notifier using python" style="background: white;">
+        <p>Battery notifier using python</p>
+      </div>
+      <div class="project-wrapper">
+        <img src="images/payment-checkout.png" alt="payment-checkout form" >
+        <p>Payment-checkout form</p>
+        <button type="button"><a href="">Give a look</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer section---- -->
+
+  <footer id="contact">
+    <p class="connect">Let's connect</p>
+    <div class="footer-icon-wrapper">
+      <a href="https://m.facebook.com/gulshan.aggarwal.73" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+
+      <a href="https://www.instagram.com/_gulshan.03_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>    
+
+      <a href="https://www.linkedin.com/in/gulshan-aggarwal-64b4121a3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+      <a href="https://github.com/Gulshanaggarwal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <p class="copyright">Copyright &copy; 2020 | Designed and Developed by Gulshan</p>
+  </footer>
+
+  <!--Contact Form---- -->
+
+  <form action="contact.php">
+    <div class="top-grouping">
+      <h2>Contact</h2>
+      <i class="fa fa-times" aria-hidden="true" onclick="form_disappear()"></i>
+    </div>
+    <div class="filling">
+      <input type="text" name="fname" placeholder="Your name" required autofocus>
+      <input type="email" name="Email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone number">
+      <textarea rows="6" style="resize: none;" placeholder="Message" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

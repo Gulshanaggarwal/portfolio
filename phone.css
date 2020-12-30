@@ -1,0 +1,261 @@
+/* ----- Max width 824px-----*/
+@media screen and (max-width: 824px){
+
+	#home{
+		flex-direction: column;
+		justify-content: center;
+	}
+	#home h1{
+		transform: scale(1.3);
+		margin-top: 2rem;
+		position: relative;
+		right: 1rem;
+	}
+	.nav-items{
+		position: relative;
+		left: 1.3rem;
+		animation: change 0.5s ease-in-out;
+		z-index: 104;
+	}
+	#about{
+		height: 80vh;
+	}
+	#about img{
+    	right: 5rem;
+    }
+    #about p{
+    	width: 50%;
+    	font-size: 1rem;
+    	height: 50%;
+    }
+    form{
+    	top: 15%;
+    	left: 30%;
+
+    }
+    @keyframes change{
+    	0%{
+    		top: -100%;
+    		transform: scale(0.5);
+    	}
+    	100%{
+    		top: 100px;
+    		transform: scale(1);
+    		    	}
+    }
+}
+
+/* ----- Max width 532px-----*/
+
+@media screen and (max-width: 532px){
+	#home{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#home h1{
+		font-size: 1.2rem;
+		margin: 0;
+		position: static;
+	}
+	#hamburger{
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.nav-items{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		z-index: 100;
+		justify-content: center;
+		align-items: center;
+		top: 100px;
+        width: 100%;
+        left: -18px;
+		background: black;
+		text-align: center;
+		border: none;
+		transition: all 1s ease;
+
+	}
+	.nav-items .active a{
+		border: none;
+	}
+	 .menu-show {
+        display:block;
+    }
+    .ham-active{
+    	transform: rotate(-180deg);
+    	transition: 0.2s ease;
+    }
+    #about{
+    	height: 95vh;
+    }
+    #about img{
+    	right: 5rem;
+    }
+    #about p{
+    	width: 250px;
+    	height: 55vh;
+    	animation: change-intro 0.5s ease;
+    }
+    form{
+    	left: 20%;
+    }
+
+    @keyframes change-intro{
+    	0%{
+    		bottom: -100%;
+    		transform: scale(0.5);
+    		position: relative;
+    	}
+
+    	100%{
+    		bottom: 0%;
+    		transform: scale(1);
+    		position: relative;
+    	}
+    }
+
+
+}
+/* ----- Max width 400px-----*/
+
+@media screen and (max-width: 400px){
+	#about img{
+		width: 5rem;
+		height: 5rem;
+	}
+	#about{
+		height: 95vh;
+	}
+	#about p{
+		width: 200px;
+		height: 65vh;
+	}
+	.project-wrapper{
+		width: 250px;
+	}
+	.project-wrapper img{
+		width: 230px;
+	}
+	.connect{
+		font-size: 1.2rem;
+	}
+	.copyright{
+		font-size: 0.8rem;
+	}
+	form{
+		left: 15%;
+	}
+}
+
+/* ----- Max width 350px-----*/
+
+@media screen and (max-width: 350px){
+	#home h1{
+		font-size: 1rem;
+	}
+	#about{
+		height: 100vh;
+	}
+	#about img{
+		width: 4rem;
+		height: 4rem;
+		right: 4rem;
+		top: 1rem;
+	}
+  #about p{
+    width: 180px;
+    height: 78vh;
+    padding: 1rem;
+  }
+  .outer-box{
+  	width: 120px;
+  height: 120px;
+  }
+  .inner-box{
+  	width: 95px;
+  	height: 95px;
+  }
+  .inner-box img{
+  	width: 50px;
+  	height: 50px;
+  }
+  .project-wrapper{
+		width: 200px;
+	}
+  .project-wrapper img{
+		width: 180px;
+		height: 110px;
+	}
+	.project-wrapper p{
+		font-size: 0.8rem;
+	}
+	form{
+		width: 210px;
+		left: 16%;
+	}
+}
+
+/* ----- Max width 300px-----*/
+
+@media screen and (max-width: 300px){
+	#home h1{
+		font-size: 0.85rem;
+	}
+	#hamburger{
+		width: 1.3rem;
+		height: 1.3rem;
+	}
+	.nav-items{
+		z-index: 101;
+	}
+	#about {
+		height: 100vh;
+	}
+	#about img{
+		right: 3rem;
+		top: 1rem;
+		z-index: 100;
+	}
+	#about p{
+		width: 160px;
+		height: 78vh;
+		font-size: 0.9rem;
+		position: relative;
+
+	}
+
+	.outer-box{
+  	width: 100px;
+  height: 100px;
+  }
+  .inner-box{
+  	width: 75px;
+  	height: 75px;
+  }
+  .inner-box img{
+  	width: 30px;
+  	height: 30px;
+  }
+  .project-wrapper{
+		width: 150px;
+	}
+  .project-wrapper img{
+		width: 130px;
+		height: 90px;
+	}
+	.project-wrapper button{
+		font-size: 0.8rem;
+	}
+	.connect{
+		font-size: 1rem;
+	}
+	.copyright{
+		font-size: 0.65rem;
+	}
+	form{
+		width: 190px;
+	}
+}
