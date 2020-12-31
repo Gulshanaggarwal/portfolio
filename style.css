@@ -69,7 +69,7 @@ html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
+  height: auto;
   position: relative;
   background: black;
   background-size: cover;
@@ -83,7 +83,7 @@ html{
   width: 6rem;
   height: 6rem;
   position: relative;
-  top: 1.5rem;
+  top: 1.2rem;
   right: 7rem;
   transform: rotate(-3deg);
 }
@@ -92,10 +92,11 @@ html{
   padding: 2rem;
   color: black;
   background-color:blanchedalmond;
-  height: 55%; 
+  height: auto; 
   font-family:'Handlee',cursive;
   line-height: 25px;
   animation: intro 1s ease-in-out;
+  margin-bottom: 1rem;
 }
 #about p-scrollbar{
   width: 5px;
@@ -264,7 +265,7 @@ form{
   left: 40%;
   background-color: #f2f2f2;
   position: fixed;
-  z-index: 101;
+  z-index: 104;
   display: none;
 }
 .top-grouping{
@@ -353,4 +354,6 @@ form{
 transform: scale(1);
   }
 }
+
+
 
