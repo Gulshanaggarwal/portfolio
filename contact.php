@@ -4,7 +4,7 @@ if($_POST["submit"]){
 	$sender_mail = $_POST['Email'];
     $phone = $_POST['phone'];
     $message = $_POST['message'];
-    $to="gulshanaggarwal333gmail.com";
+    $to="gulshanaggarwal333@gmail.com";
     $subject='My website message';
 
     //mail body
