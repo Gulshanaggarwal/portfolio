@@ -1,14 +1,24 @@
 <?php
-//variable setting
-$name = $_REQUEST['fname'];
-$email = $_REQUEST['Email'];
-$phone = $_REQUEST['phone'];
-$message = $_REQUEST['message'];
+if($_POST["submit"]){
+	$name = $_POST['fname'];
+	$sender_mail = $_POST['Email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+    $to="gulshanaggarwal333@gmail.com";
+    $subject='My website message';
 
-mail('gulshanaggarwal333@gmail.com' ,"My website" ,$message ,"From: $name <$email> <$phone>");
-echo "<script type='text/javascript'>
+    //mail body
+
+    $mail_body=" Name: $name\n Email: $sender_mail\n Phone_number: $phone\n\n $message";
+
+    //mail function
+    mail($to, $subject, $mail_body,"From: $name <$sender_mail>");
+    echo "<script type='text/javascript'>
 alert('Your message sent succesfully');
 window.history.log(-1); 
 </script>";
+
+
+}
 ?>
 
