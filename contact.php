@@ -13,10 +13,6 @@ if($_POST["submit"]){
 
     //mail function
     mail($to, $subject, $mail_body,"From: $name <$sender_mail>");
-    echo "<script type='text/javascript'>
-alert('Your message sent succesfully');
-window.history.log(-1); 
-</script>";
 
 
 }
