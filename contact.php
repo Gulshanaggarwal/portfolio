@@ -1,18 +1,18 @@
 <?php
 if($_POST["submit"]){
 	$name = $_POST['fname'];
-	$sender_mail = $_POST['Email'];
+	$sendermail = $_POST['Email'];
     $phone = $_POST['phone'];
-    $message = $_POST['message'];
+    $Message = $_POST['message'];
     $to="gulshanaggarwal333@gmail.com";
     $subject='My website message';
 
     //mail body
 
-    $mail_body=" Name: $name\n Email: $sender_mail\n Phone_number: $phone\n\n $message";
+    $mailbody=" Name: $name\n Email: $sender_mail\n Phone_number: $phone\n\n$Message";
 
     //mail function
-    mail($to, $subject, $mail_body,"From: $name <$sender_mail>");
+    mail($to, $subject, $mailbody,"From: $name <$sendermail>");
 
 
 }
