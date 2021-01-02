@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -13,10 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-<script type="text/javascript" src="app.js"></script>
+<script src="app.js"></script>
 </head>
 <body>
-  <!--Home section---- -->
+  <!-- *********Home section******** -->
   <header id="home">
     <h1><span>Gulshan</span> <span>Aggarwal</span></h1>
     <div class="nav-wrapper">
@@ -31,14 +31,14 @@
     </div>
   </header>
 
-  <!--About section---- -->
+  <!-- *********About section********* -->
 
   <section id="about">
-    <img src="images/Gulshan Aggarwal.jpg" alt="gulshan aggarwal">
+    <img src="images/Gulshan_Aggarwal.jpg" alt="gulshan aggarwal">
     <p>Hey,I'm <strong>Gulshan</strong> this is my portfolio,I'm a Student in computer science pursuing bachelor's of technology from Rajasthan technical university kota.Programming has changed my life I've learned new things in my life,from the young age I'm much passionate towards technologies like web & this is the time I'm learning my favourite technologies.Currently I'm also a online tutor at Chegg India.</p>
   </section>
 
-  <!--Skill section---- -->
+  <!-- *********Skill section********* -->
 
   <section id="skill">
     <h2 class="utility-class">My Skills</h2>
@@ -60,7 +60,7 @@
     </div>
   </section>
 
-  <!--project section---- -->
+  <!-- *********project section********* -->
 
   <section id="project">
     <h2 class="utility-class">Projects</h2>
@@ -68,7 +68,7 @@
       <div class="project-wrapper">
         <img src="images/Foodbazaar.png" alt="Foodbazaar">
         <p>Food bazaar a single web page design</p>
-        <button type="button"><a href="https://gulshanaggarwal.github.io/Foodbazaar/" target="_blank">Give a look</a></button>
+        <a href="https://gulshanaggarwal.github.io/Foodbazaar/" target="_blank">Give a look</a>
       </div>
       <div class="project-wrapper">
        <img src="images/code.svg" alt="Battery notifier using python" style="background: white;">
@@ -77,12 +77,12 @@
       <div class="project-wrapper">
         <img src="images/payment-checkout.png" alt="payment-checkout form" >
         <p>Payment-checkout form</p>
-        <button type="button"><a href="https://gulshanaggarwal.github.io/Payment-checkout./" target="_blank">Give a look</a></button>
+        <a href="https://gulshanaggarwal.github.io/Payment-checkout./" target="_blank">Give a look</a>
       </div>
     </div>
   </section>
 
-  <!--Footer section---- -->
+  <!-- *********Footer section********* -->
 
   <footer id="contact">
     <p class="connect">Let's connect</p>
@@ -98,9 +98,9 @@
     <p class="copyright">Copyright &copy; 2020 | Designed and Developed by Gulshan</p>
   </footer>
 
-  <!--Contact Form---- -->
+  <!-- *********Contact Form********* -->
 
-  <form action="contact.php" name="post">
+  <form action="contact.php" method="post">
     <div class="top-grouping">
       <h2>Contact</h2>
       <i class="fa fa-times" aria-hidden="true" onclick="form_disappear()"></i>
@@ -110,7 +110,7 @@
       <input type="email" name="Email" placeholder="Email" required>
       <input type="tel" name="phone" placeholder="Phone number">
       <textarea rows="6" style="resize: none;" placeholder="Message" name="message"></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit" name="submit">Submit</button>
     </div>
   </form>
 </body>
