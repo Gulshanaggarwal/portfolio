@@ -254,8 +254,9 @@
 		width: 130px;
 		height: 90px;
 	}
-	.project-wrapper button{
+	.project-wrapper a{
 		font-size: 0.8rem;
+		width: 70px;
 	}
 	.connect{
 		font-size: 1rem;
@@ -311,9 +312,6 @@
 		width: 110px;
 		height: 70px;
 	}
-	.project-wrapper button{
-		font-size: 0.8rem;
-	}
 	.connect{
 		font-size: 1rem;
 	}
@@ -325,4 +323,3 @@
 		left: 14%;
 	}
 }
-
