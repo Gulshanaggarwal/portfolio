@@ -202,17 +202,16 @@ html{
   color: #E2D8D8;
   padding-top: 0.4rem;
 }
-.project-wrapper button{
+.project-wrapper a{
+  color: white;
+  display: block;
   font-size: 1rem;
   padding: 0.5rem;
   background-color: blue;
   border-radius: 5px;
   border: none;
   margin: 0.5rem 0 0.5rem 0;
-
-}
-.project-wrapper button a{
-  color: white;
+  width: 90px;
 }
 
 
@@ -304,8 +303,8 @@ form{
 
 .filling button{
   display: block;
-  background-color: green;
   color: white;
+  background-color: green;
   border-radius: 5px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border: none;
@@ -354,6 +353,4 @@ form{
 transform: scale(1);
   }
 }
-
-
 
