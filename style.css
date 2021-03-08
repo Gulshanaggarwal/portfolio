@@ -282,6 +282,7 @@ form{
   color: red;
   font-size: 1.5rem;
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 .filling{
   margin: 1rem;
