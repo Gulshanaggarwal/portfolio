@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-  <script src="app.js"></script>
 </head>
 
 <body>
@@ -28,9 +27,9 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skill">Skills</a></li>
         <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Let's Talk</a></li>
       </ul>
-      <img src="images/menu.svg" alt="Menu" id="hamburger" onclick="showMenu()">
+      <img src="images/menu.svg" alt="Menu" id="hamburger">
     </div>
   </header>
 
@@ -39,29 +38,68 @@
   <section id="about">
     <img src="images/Gulshan_Aggarwal.jpg" alt="gulshan aggarwal">
     <p>Hey,I'm <strong>Gulshan</strong> this is my portfolio,I'm a Student in computer science pursuing bachelor's of
-      technology from Rajasthan technical university kota.Programming has changed my life I've learned new things in my
-      life,from the young age I'm much passionate towards technologies like <b>Web</b> & this is the time I'm learning my
-      favourite technologies.Currently I'm also a online tutor at Chegg India.</p>
+      technology from Rajasthan technical university kota.I'm tech enthusiast, a learner.I'm deeply passionate towards
+      Web development.I've worked with many technologies,currently I'm working on <strong>Full stack
+        development.</strong></p>
   </section>
 
   <!-- *********Skill section********* -->
 
   <section id="skill">
-    <h2 class="utility-class">My Skills</h2>
-    <div class="pair-skills">
-      <div class="outer-box">
-        <div class="inner-box"><img src="images/html5.svg" alt="html5"></div>
+    <h1 class="skill-heading">Tech I'm Familiar with</h1>
+    <div class="skills-wrapper">
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box">
+            <img src="images/C++logo.svg" alt="C++_logo" />
+          </div>
+        </div>
+        <p class="skill-description">C++</p>
       </div>
-      <div class="outer-box">
-        <div class="inner-box"><img src="images/css-3.svg" alt="css-3"></div>
+
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box">
+            <img src="images/python.svg" alt="Python_logo" />
+          </div>
+        </div>
+        <p class="skill-description">Python</p>
       </div>
-    </div>
-    <div class="pair-skills">
-      <div class="outer-box">
-        <div class="inner-box"><img src="images/python.svg" alt="python"></div>
+
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box">
+            <img src="images/Javascript logo.svg" alt="Javascript_logo" />
+          </div>
+        </div>
+        <p class="skill-description">Javascript</p>
       </div>
-      <div class="outer-box">
-        <div class="inner-box"><img src="images/c.svg" alt="c programming"></div>
+
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box-customise">
+            <img src="images/React-icon.svg" alt="React_logo" />
+          </div>
+        </div>
+        <p class="skill-description">React</p>
+      </div>
+
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box-customise">
+            <img src="images/Node.js_logo.svg" alt="C++_logo" />
+          </div>
+        </div>
+        <p class="skill-description">NodeJS</p>
+      </div>
+
+      <div class="particular-skill-wrapper">
+        <div class="outer-box">
+          <div class="inner-box-customise">
+            <img src="images/MongoDB_Logo.svg" alt="C++_logo" />
+          </div>
+        </div>
+        <p class="skill-description">MongoDB</p>
       </div>
     </div>
   </section>
@@ -69,31 +107,32 @@
   <!-- *********project section********* -->
 
   <section id="project">
-    <h2 class="utility-class">Projects</h2>
+    <h2 class="project-heading">Projects</h2>
     <div class="project-container">
       <div class="project-wrapper">
         <img src="images/NewsAdda.png" alt="NewsAdda">
-        <p>News Adda a news website</p>
-        <a href="https://gulshanaggarwal.github.io/NewsAdda/" target="_blank">Give a look</a>
+        <p>➤ News Adda a news website</p>
+        <div class="project-link"><a href="https://gulshanaggarwal.github.io/NewsAdda/" target="_blank">Give a look</a>
+        </div>
       </div>
       <div class="project-wrapper">
         <img src="images/code.svg" alt="Battery notifier using python" style="background: white;">
-        <p>Battery notifier using python</p>
-        <a href="https://github.com/Gulshanaggarwal/Battery-notifier-app" target="_blank">Give a look</a>
+        <p>➤ Battery notifier using python</p>
+        <div class="project-link"><a href="https://github.com/Gulshanaggarwal/Battery-notifier-app" target="_blank">Give
+            a look</a></div>
       </div>
       <div class="project-wrapper">
         <img src="images/Justshort url shortner.png" alt="just-short url shortner">
-        <p>Just short a Url shortner app</p>
-        <a href="https://justshort.herokuapp.com/" target="_blank">Give a look</a>
+        <p>➤ Just short a Url shortner app</p>
+        <div class="project-link"><a href="https://justshort.herokuapp.com/" target="_blank">Give a look</a></div>
       </div>
-    </div>
     </div>
   </section>
 
   <!-- *********Footer section********* -->
 
   <footer id="contact">
-    <p class="connect">Let's connect</p>
+    <p class="connect">Let's Talk</p>
     <div class="footer-icon-wrapper">
       <a href="https://m.facebook.com/gulshan.aggarwal.73" target="_blank"><i class="fa fa-facebook-official"
           aria-hidden="true"></i></a>
@@ -106,24 +145,56 @@
 
       <a href="https://github.com/Gulshanaggarwal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
     </div>
-    <p class="copyright">Copyright &copy; 2020 | Designed and Developed by Gulshan</p>
+    <p class="copyright">Copyright &copy; 2021 | Designed and Developed by Gulshan</p>
   </footer>
 
-  <!-- *********Contact Form********* -->
+  <!--**** Chat section-->
 
-  <form action="https://formspree.io/f/mdopprnl" method="POST">
-    <div class="top-grouping">
-      <h2>Contact</h2>
-      <i class="fa fa-times" aria-hidden="true" onclick="form_disappear()"></i>
+  <div id="chatting-icon">
+    <img src="images/question-mark.svg" alt="question_mark_icon" />
+  </div>
+
+  <!-- **** Form Section-->
+  <form id="form">
+    <div class="cross-icon">
+      <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-    <div class="filling">
-      <input type="text" name="Sender" placeholder="Your name" required autofocus>
-      <input type="email" name="Sender_mail" placeholder="Email" required>
-      <input type="tel" name="Phone" placeholder="Phone number(optional)">
-      <textarea rows="6" style="resize: none;" placeholder="Message" name="message"></textarea>
-      <button type="submit">Submit</button>
+    <div class="form-items-wrapper">
+      <h2>Wanna Say Something!</h2>
+      <div class="input-wrapper">
+        <input type="text" name="text" placeholder="Your Name" class="name" required/>
+        <input type="email" name="email" placeholder="Your Email" class="email" required />
+        <textarea class="message-box" rows="4" placeholder="Message" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LfgLNkaAAAAAK0yq8b97IQH51l7DfTCcwNWSWlC"></div>
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+
     </div>
+
   </form>
+  <!-- Css loader-->
+  <div id="loader-wrapper">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <!-- Scripts-->
+
+  <script src="app.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
