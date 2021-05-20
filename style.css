@@ -322,7 +322,8 @@ html{
 
 #form{
   width: 400px;
-  background-color: var(--honeydew);
+  background-color: rgb(243, 237, 237);
+  background-image: linear-gradient(22.5deg, rgba(242, 242, 242, 0.03) 0%, rgba(242, 242, 242, 0.03) 16%,rgba(81, 81, 81, 0.03) 16%, rgba(81, 81, 81, 0.03) 26%,rgba(99, 99, 99, 0.03) 26%, rgba(99, 99, 99, 0.03) 73%,rgba(43, 43, 43, 0.03) 73%, rgba(43, 43, 43, 0.03) 84%,rgba(213, 213, 213, 0.03) 84%, rgba(213, 213, 213, 0.03) 85%,rgba(125, 125, 125, 0.03) 85%, rgba(125, 125, 125, 0.03) 100%),linear-gradient(22.5deg, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 54%,rgba(144, 144, 144, 0.03) 54%, rgba(144, 144, 144, 0.03) 60%,rgba(204, 204, 204, 0.03) 60%, rgba(204, 204, 204, 0.03) 76%,rgba(37, 37, 37, 0.03) 76%, rgba(37, 37, 37, 0.03) 78%,rgba(115, 115, 115, 0.03) 78%, rgba(115, 115, 115, 0.03) 91%,rgba(63, 63, 63, 0.03) 91%, rgba(63, 63, 63, 0.03) 100%),linear-gradient(157.5deg, rgba(71, 71, 71, 0.03) 0%, rgba(71, 71, 71, 0.03) 6%,rgba(75, 75, 75, 0.03) 6%, rgba(75, 75, 75, 0.03) 15%,rgba(131, 131, 131, 0.03) 15%, rgba(131, 131, 131, 0.03) 18%,rgba(110, 110, 110, 0.03) 18%, rgba(110, 110, 110, 0.03) 37%,rgba(215, 215, 215, 0.03) 37%, rgba(215, 215, 215, 0.03) 62%,rgba(5, 5, 5, 0.03) 62%, rgba(5, 5, 5, 0.03) 100%),linear-gradient(90deg, #ffffff,#ffffff);
   display: none;
   position: fixed;
   top: 3%;
@@ -344,6 +345,7 @@ html{
 }
 .form-items-wrapper h2{
   margin: 1rem 1rem;
+  color: var(--red-pink);
 }
 .input-wrapper{
   display: flex;
@@ -355,7 +357,7 @@ html{
   padding: 0.8rem;
   border:none;
   margin: 1rem 0;
-  background-color: black;
+  background-color: #222121;
   color: var(--honeydew);
   border-radius: 5px;
 
@@ -366,7 +368,7 @@ html{
   resize: none;
   border: none;
   margin: 1rem 0;
-  background-color: black;
+  background-color: #222121;
   color: var(--honeydew);
   border-radius: 5px;
 }
@@ -376,7 +378,7 @@ html{
 }
 .submit-button{
   font-size: 1rem;
-  background-color: rgb(18, 100, 18);
+  background-color: var(--red-pink);
   color:whitesmoke;
   width: 30%;
   margin: 0.5rem 0 1rem 0;
@@ -387,7 +389,7 @@ html{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .input-wrapper input:hover ,.message-box:hover{
-  border: 3px solid rgb(18, 100, 18);
+  border: 2px solid var(--red-pink);
 }
 
 /* Loader css*/

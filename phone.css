@@ -638,7 +638,7 @@
    }
    .input-wrapper input,.message-box{
     padding: 0.5rem;
-    width: 90%;
+    width: 92%;
 }
    .g-recaptcha{
        transform: scale(0.55);
