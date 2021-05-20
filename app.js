@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
       message: message.value
     }
 
-    fetch('http://localhost:9000/', {
+    fetch('https://post-api-portfolio.herokuapp.com/portfolio', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json;charset=utf-8'

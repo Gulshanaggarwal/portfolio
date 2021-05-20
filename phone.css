@@ -175,6 +175,7 @@
     }
     .project-wrapper{
         width: 60%;
+        margin-left: 1rem;
     }
     .project-wrapper img{
         height: 200px;
@@ -350,12 +351,12 @@
     .nav-items .active a,.nav-items li a:hover{
         font-size: 1.1rem;
     }
+    .project-wrapper{
+        margin: 2rem 0.5rem;
+    }
     
     .project-wrapper img{
         height: 150px;
-    }
-    .form-items-wrapper h2{
-        font-size: 1.1rem;
     }
     .g-recaptcha{
         transform: scale(0.8);
@@ -429,6 +430,7 @@
    }
    .project-wrapper{
        width: 55%;
+       margin-left: 0;
    }
    .project-wrapper img{
        height: 110px;
@@ -452,6 +454,9 @@
 }
    .copyright{
        font-size: 0.5rem;
+   }
+   .form-items-wrapper h2{
+       font-size: 1.25rem;
    }
 }
 
@@ -511,7 +516,7 @@
    }
    .project-wrapper{
        width: 65%;
-       margin: 1.5rem 2rem;
+       margin: 1.5rem 0;
    }
    .project-wrapper img{
        height: 90px;
@@ -538,17 +543,17 @@
    }
 
    .form-items-wrapper h2{
-       font-size: 1rem;
+       font-size: 1.1rem;
    }
    .input-wrapper input,.message-box{
        padding: 0.5rem;
-       width: 100%;
+       width: 85%;
    }
    .submit-button{
        font-size: 0.9rem;
    }
    .g-recaptcha{
-    transform: scale(0.55);
+    transform: scale(0.65);
 }
 }
 
@@ -604,7 +609,7 @@
    }
    .project-wrapper{
        width: 60%;
-       margin: 1.5rem 2rem;
+       margin: 1.5rem 0;
    }
    .project-wrapper img{
        height: 80px;
@@ -628,14 +633,15 @@
    .copyright{
        font-size: 0.35rem;
    }
-   .form-items-wrapper{
-       margin-left: 1rem;
-   }
    .form-items-wrapper h2{
-    font-size: 0.8rem;
+       font-size: 0.95rem;
+   }
+   .input-wrapper input,.message-box{
+    padding: 0.5rem;
+    width: 90%;
 }
-   .submit-button{
-       font-size: 0.8rem;
+   .g-recaptcha{
+       transform: scale(0.55);
    }
 }
 
